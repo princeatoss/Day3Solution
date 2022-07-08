@@ -38,7 +38,7 @@ type Employee{
 type Query {
   todos: [Todo!]!
   users:[User]!
-  company:Company!
+  company(name:String!):Company!
 }
 
 input NewTodo {
